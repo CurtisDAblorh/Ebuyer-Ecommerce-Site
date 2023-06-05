@@ -19,23 +19,23 @@ const App = () => {
 
   const handleAddToCart = async ( productId, quantity) => {
       const item = await commerce.cart.add(productId, quantity);
-      setCart(item.cart);
+      setCart(item);
   }
 
   const handleUpdateCartQty = async ( productId, quantity) => {
     const item = await commerce.cart.update(productId, {quantity});
-    setCart(item.cart);
+    setCart(item);
 }
 
 
 const handleRemoveFromCart = async ( productId) => {
   const item = await commerce.cart.remove(productId);
-  setCart(item.cart);
+  setCart(item);
 }
 
 const handleEmptyCart = async ( ) => {
   const item = await commerce.cart.empty();
-  setCart(item.cart);
+  setCart(item);
 }
 
 
@@ -45,13 +45,13 @@ const handleEmptyCart = async ( ) => {
     fetchCart();
   },[]);
 
-
+console.log(cart.total_items);
 
 
   return (
     <div>
      
-      <Navbar totalItems={cart.total_items}/>
+      <Navbar totalItems={cart.total_items} />
       <Routes>
       <Route  path='/' element={<Products products={products} onAddToCart={handleAddToCart}/>}/>
       <Route path='/cart' element={
