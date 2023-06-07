@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {Products, Navbar, Cart} from './components';
+import {Products, Navbar, Cart, Checkout} from './components';
 import {commerce} from './lib/commerce';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -61,6 +61,7 @@ console.log(cart.total_items);
         handleRemoveFromCart ={handleRemoveFromCart}
         handleEmptyCart={handleEmptyCart}
       />}/>
+      <Route  path='/checkout' element={<Checkout cart={cart} />}/>
       </Routes>
     </div>
   );
