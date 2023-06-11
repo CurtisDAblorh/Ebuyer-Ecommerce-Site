@@ -49,16 +49,19 @@ const refreshCart = async ( ) => {
 
 
 
-const handleCaptureCheckout = async (checkoutTokenId, newOrder) => {
-try {
-  const incomingOrder= await commerce.checkout.capture(checkoutTokenId, newOrder);
-  setOrder(incomingOrder);
-  refreshCart();
-}catch(error) {
-setErrorMessage(error.data.error.message);
-}
+  const handleCaptureCheckout = async (checkoutTokenId, newOrder) => {
+  try {
+    console.log(commerce);
+    const incomingOrder = await commerce.checkout.capture(checkoutTokenId, newOrder);
 
-}
+    setOrder(incomingOrder);
+
+    refreshCart();
+  } catch (error) {
+    setErrorMessage(error.data.error.message);
+  }
+ };
+
 
   useEffect(() => {
     fetchProducts();

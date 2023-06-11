@@ -4,8 +4,8 @@ import {Elements, CardElement, ElementsConsumer} from '@stripe/react-stripe-js';
 import {loadStripe} from '@stripe/stripe-js';
 import Review from './Review';
 
-const stripePromise= loadStripe("pk_test_51NHpywJt7l5enro4eaGXtJxA3mfPjDNuJ347qopqnd4ZymrZW2vMZsj1ZhmwZBlThZjYndgsdjnT57iVtgGhFWd900zx6C6q6m");
-const PaymentForm = ({checkoutToken, backStep, shippingData, onCaptureCheckout, nextStep, timeout}) => {
+const stripePromise= loadStripe('pk_test_51NHpywJt7l5enro4eaGXtJxA3mfPjDNuJ347qopqnd4ZymrZW2vMZsj1ZhmwZBlThZjYndgsdjnT57iVtgGhFWd900zx6C6q6m', true);
+const PaymentForm = ({checkoutToken, backStep, shippingData, onCaptureCheckout, nextStep, timeout,}) => {
   const handleSubmit=async (event, elements, stripe) => {
         event.preventDefault();
         if(!stripe || !elements) return;
@@ -19,7 +19,7 @@ const PaymentForm = ({checkoutToken, backStep, shippingData, onCaptureCheckout, 
           const orderData={
             
               line_items: checkoutToken.line_items,
-              customer: {firstname: shippingData.firstname, lastname: shippingData.lastname,},
+              customer: {firstname: shippingData.firstname, lastname: shippingData.lastname, email: shippingData.email},
               shipping: {
                 name: 'Primary',
                street:shippingData.address1, 
