@@ -14,7 +14,7 @@ const Navbar = ({totalItems}) => {
     
    <div>
    
-    <AppBar position="fixed" className={classes.appbar} color="inherit">
+    <AppBar position="fixed" className={classes.appbar} color="red">
       <Toolbar>
         <Typography component = {Link} to="/"  variant="h6" className={classes.title} colour="inherit">
           <img src={logo} height="25px" alt="ebuyer" className={classes.image}/>
