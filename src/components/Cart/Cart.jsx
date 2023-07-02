@@ -9,7 +9,7 @@ const Cart = ({cart, handleUpdateCartQty,handleRemoveFromCart,handleEmptyCart}) 
     const classes=useStyles();
     const EmptyCart = () => (
         <Typography variant="subtitle1">You have no items in your Cart,
-        <Link to ="/" className={classes.link}>
+        <Link to ="/Ebuyer-Ecommerce-Site/" className={classes.link}>
         start adding some
         </Link>
         </Typography>

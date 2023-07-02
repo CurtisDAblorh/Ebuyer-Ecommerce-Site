@@ -54,7 +54,7 @@ const Checkout = ({cart, order, onCaptureCheckout, error}) => {
             <Typography variant="subtitle2">Order ref: {order.customer_reference}</Typography>
           </div>
           <br />
-          <Button component={Link} variant="outlined" type="button" to="/">Back to home</Button>
+          <Button component={Link} variant="outlined" type="button" to="/Ebuyer-Ecommerce-Site/">Back to home</Button>
         </>
       ) : isFinished ? (
 
@@ -64,7 +64,7 @@ const Checkout = ({cart, order, onCaptureCheckout, error}) => {
           <Divider className={classes.divider} />
         </div>
         <br />
-        <Button component={Link} variant="outlined" type="button" to="/">Back to home</Button>
+        <Button component={Link} variant="outlined" type="button" to="/Ebuyer-Ecommerce-Site/">Back to home</Button>
       </>
 
       ):(
@@ -79,7 +79,7 @@ const Checkout = ({cart, order, onCaptureCheckout, error}) => {
       <>
         <Typography variant="h5">Error: {error}</Typography>
         <br />
-        <Button component={Link} variant="outlined" type="button" to="/">Back to home</Button>
+        <Button component={Link} variant="outlined" type="button" to="/Ebuyer-Ecommerce-Site/">Back to home</Button>
       </>
     );
   }

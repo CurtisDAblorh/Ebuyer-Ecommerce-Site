@@ -76,7 +76,7 @@ console.log(cart.total_items);
      
       <Navbar totalItems={cart.total_items} />
       <Routes>
-      <Route  path='/' element={<Products products={products} onAddToCart={handleAddToCart}/>}/>
+      <Route  path='/Ebuyer-Ecommerce-Site/' element={<Products products={products} onAddToCart={handleAddToCart}/>}/>
       <Route path='/cart' element={
       <Cart
        cart={cart}
