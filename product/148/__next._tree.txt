@@ -1,0 +1,8 @@
+:HL["/Ebuyer-Ecommerce-Site/_next/static/chunks/39dsnin9gdymx.css","style"]
+:HL["/Ebuyer-Ecommerce-Site/_next/static/media/7ebf22b5a21034f8-s.p.3j3877k49yy0l.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Ebuyer-Ecommerce-Site/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/Ebuyer-Ecommerce-Site/_next/static/media/fba5a26ea33df6a3-s.p.18rizl4rsrl42.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+3:[["children",{"s":"__PAGE__","h":160}]]
+2:[["children",{"s":{"n":"id","t":"d","k":"148","s":[]},"h":65632,"c":"$Q3"}]]
+1:[["children",{"s":"product","h":131136,"c":"$Q2"}]]
+0:{"b":"FuYymhex_p3WqjUFJO4Ds","t":{"t":{"s":"","h":131088,"c":"$Q1"}}}
