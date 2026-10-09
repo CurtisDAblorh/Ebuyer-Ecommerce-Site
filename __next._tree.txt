@@ -3,4 +3,4 @@
 :HL["/Ebuyer-Ecommerce-Site/_next/static/media/e41d5df559864f9e-s.p.1g73gv09-xcb6.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["/Ebuyer-Ecommerce-Site/_next/static/media/fba5a26ea33df6a3-s.p.18rizl4rsrl42.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 1:[["children",{"s":"__PAGE__","h":128}]]
-0:{"b":"FuYymhex_p3WqjUFJO4Ds","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
+0:{"b":"v5RHdRYEPvvIrrN-nwKwl","t":{"t":{"s":"","h":16,"c":"$Q1"}}}
